@@ -1,0 +1,89 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>lecturer main menu</title>
+    
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+  <link rel="stylesheet" href="LecturerNewQuestion.css">
+</head>
+
+<body>
+   
+   <img id="bg" src="../Pictures/LoginBg.jpg" alt="bg"/>
+    
+   <img id="title" src="Pictures/CreatingNewQ.png" class="img-responsive"/>
+
+    <table id="Files">    
+      <tr>
+        <td>Question Name</td>
+        
+        <td id="name"> 
+            <input type="text" name="QuestionName" style="text-align:center; color:black;">
+        </td>  
+      </tr>
+<!---------------------------------------------------->
+      <tr>
+        <td>Question Type</td>
+          
+        <td id="select">
+        <select name="QuestionType" multiple>
+          <option value="Multichoice">Multichoice</option>
+          <option value="Calculation">Calculation</option>
+          <option value="Yes/No">Yes/No</option>
+        </select>
+        </td>  
+      </tr>
+<!---------------------------------------------------->       
+      <tr>
+        <td>Completion time</td>
+          
+        <td id="time">      
+        <input type="text" name="time" style="text-align:center; color:black;"><p> Minutes</p>             
+        </td>  
+          
+      </tr>
+<!----------------------------------------------------> 
+        <tr>
+          <td>Select topic</td>
+            
+         <td id="topic">
+            <select name="QuestionType" multiple>
+             <option value="Place holder 1">Place holder 1</option>
+             <option value="Place holder 2">Place holder 2</option>
+             <option value="Place holder 3">Place holder 3</option>
+            </select> 
+         </td>     
+        </tr>
+<!---------------------------------------------------->             <tr>
+        <td>Upload image</td>
+        
+        <td id="img">
+        <input type="file" name="QuestionImg" accept="image/*">
+        </td>
+      </tr>         
+    </table>
+    
+   <a href="#">    
+   <img id="SaveQ" src="Pictures/SaveQuestion.png" class="img-responsive">
+   </a>        
+    
+        <p id="LoggedInAs"> You are logged in as --------- </p>
+
+        <div id="dropdown">
+            <img id="mainmenu" src="../Pictures/MenuIcon.png" alt="MenuIcon"/>
+
+            <div class="dropdown-content">
+              <a href="LectureMM.html">Main Menu</a> 
+                <br>
+              <a href="Login.html">Logout</a>
+            </div>
+        </div>
+    
+    <img id="UoaLogo" src="/Pictures/uoaLogo.jpg" alt="UoaLogo"/>
+    
+</body>
+</html>

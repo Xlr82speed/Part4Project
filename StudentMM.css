@@ -1,0 +1,70 @@
+#bg {
+    position: absolute;
+    top:0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+}
+
+#mainmenu {
+    position: absolute;
+    top: 0.5%;
+    left: 0.5%;
+    height: 10%;
+    width: 15%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    top: 9%;
+    left: 3%;
+    min-width: 10%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+#dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#ActiveQuestions {
+    position: absolute;
+    top: 20%;
+    left: 7%; 
+    height: 15%;
+    width: 40%;
+}
+
+#ConnectLecturer {
+    position: absolute;
+    top: 20%;
+    left: 55%; 
+    height: 15%;
+    width: 40%;
+}
+
+#Answers {
+    position: absolute;
+    top: 55%;
+    left: 7%; 
+    height: 15%;
+    width: 40%;
+}
+
+#Feedback {
+    position: absolute;
+    top: 55%;
+    left: 55%; 
+    height: 15%;
+    width: 40%;
+}
+
+#UoaLogo {
+    position: absolute;
+    top: 91.5%;
+    left: 0.5%; 
+    height: 8%;
+    width: 25%;
+}

@@ -1,0 +1,79 @@
+#bg {
+    position: absolute;
+    top:0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+}
+
+#mainmenu {
+    position:absolute;
+    top: 0.5%;
+    left: 0.5%;
+    height: 10%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    top: 9%;
+    left: 0.5%;
+    min-width: 10%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+#dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#LoggedInAs {
+    position: absolute;
+    top: 2%;
+    right: 1%;
+    font-size: 20px;
+}
+
+#title {
+    position: absolute;
+    top: 10%;
+    left: 31%;
+    height: 7%; 
+}
+
+table#Files {
+    position: absolute;
+    top: 20%;
+    left:30%;
+
+}
+
+table#Files td {
+    border: 2px solid black;
+    background-color:blue;
+    padding: 5px;
+    color: white;
+    text-align: center;
+}
+
+
+table#Files select {
+    border: 2px solid lightblue;
+    color: red;
+    background-color: black;
+}
+
+
+#SaveQ{
+    position: absolute;
+    top: 70%;
+    left:43%;
+}
+
+#UoaLogo {
+    position: absolute;
+    top: 91.5%;
+    left: 0.5%; 
+    height: 8%;
+}
