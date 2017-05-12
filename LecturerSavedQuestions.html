@@ -3,161 +3,139 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>lecturer main menu</title>
+  <title>Saved questions</title>
     
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     
+  <!-- Latest compiled Material Design -->    
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script> 
+     
   <link rel="stylesheet" href="LecturerSavedQuestions.css">
-    
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
 </head>
 
 <body>
     
-    <p id="LoggedInAs"> You are logged in as --------- </p>
+    <!-----------------------------NAVBAR ----------------------->
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title"> SAVED QUESTIONS </span>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation. We hide it in small screens. -->
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <p id="LoggedInAs"> You are logged in as _________ </p>
+          </nav>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="LectureMM.html">Main Menu</a>   
+          <a class="mdl-navigation__link" href="Login.html">Logout</a>
+        </nav>
+      </div>
+    </div>
+    
+              
+    
+    <div class="topics"> 
+      <form action="#">  
+        <button class="accordion">Topic 1</button>
+            <div class="panel">
+                    <table id="Files"> 
+                      <tr>
+                        <td id="NoBorder">Q1</td>
+                        <td id="Border">Multi choice</td>
+                        <td id="Border">
+                        <img src="/Pictures/ExampleSavedQuestion.jpg" class="img-responsive"/>
+                        </td>
+                        <td id="NoBorder"><a href="EditQuestion.html">Edit Question</a></td>  
+                      </tr> 
 
-        <div id="dropdown">
-            <img id="mainmenu" src="../Pictures/MenuIcon.png" alt="MenuIcon"/>
+                      <tr>    
+                          <td id="NoBorder"> Q2</td>
+                          <td id="Border">Calculation</td>
+                          <td id="Border">     
+                            <img src="/Pictures/ExampleSavedQuestion.jpg" class="img-responsive"/>
+                          </td>            
+                          <td id="NoBorder"><a href="EditQuestion.html">Edit Question</a></td>  
+                      </tr>
 
-            <div class="dropdown-content">
-              <a href="LectureMM.html">Main Menu</a> 
-                <br>
-              <a href="Login.html">Logout</a>
+                      <tr>    
+                          <td id="NoBorder">Q3</td>
+                          <td id="Border">Yes/No</td>
+                          <td id="Border">     
+                            <img src="/Pictures/ExampleSavedQuestion.jpg" class="img-responsive"/>
+                          </td>
+                          <td id="NoBorder"><a href="EditQuestion.html">Edit Question</a></td>        
+                      </tr>
+                    </table>
             </div>
-        </div>
-    
- <form action="#">  
-<!------------------- START OF TOPICS ------------------------>   
- <div class="container">
-  <div class="panel-group" id="accordion">
 
-<!------------------- FIRST TOPIC --------------------------->      
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Topic 1</a>
-        </h4>
-      </div>
-      <div id="collapse1" class="panel-collapse collapse in">
-        <div class="panel-body">
-                <table> 
+        <button class="accordion">Topic 2</button>
+            <div class="panel">
+                   <table id="Files">    
+                      <tr>
+                        <td id="NoBorder">Q1</td>
+                        <td id="Border">Multi choice</td>
+                        <td id="Border">
+                        <img src="/Pictures/ExampleSavedQuestion.jpg" class="img-responsive"/>
+                        </td>
+                          <td id="NoBorder"><a href="EditQuestion.html">Edit Question</a></td>  
+                      </tr> 
+                  </table>
+            </div>
 
+        <button class="accordion">Topic 3</button>
+            <div class="panel">
+                <table id="Files">    
                   <tr>
-                    <td>Q1</td>
-                    <td>Multi choice</td>
-                    <td>
-                    <img src="/Pictures/ExampleSavedQuestion.jpg" height="50%"/>
+                    <td id="NoBorder">Q1</td>
+                    <td id="Border">Multi choice</td>
+                    <td id="Border">
+                    <img src="/Pictures/ExampleSavedQuestion.jpg" class="img-responsive"/>
                     </td>
-                    <td><input type="checkbox" name="#" value="#"><br>Select </td>  
+                          <td id="NoBorder"><a href="EditQuestion.html">Edit Question</a></td>   
                   </tr> 
 
                   <tr>    
-                      <td>Q2</td>
-                      <td>Calculation</td>
-                      <td>     
-                        <img src="/Pictures/ExampleSavedQuestion.jpg" height="50%"/>
-                      </td>            
-                      <td><input type="checkbox" name="#" value="#"><br>Select</td>  
+                  <td id="NoBorder">Q2</td>
+                  <td id="Border">Calculation</td>
+                  <td id="Border">     
+                    <img src="/Pictures/ExampleSavedQuestion.jpg" class="img-responsive"/>
+                  </td>            
+                          <td id="NoBorder"><a href="EditQuestion.html">Edit Question</a></td>   
                   </tr>
 
                   <tr>    
-                      <td>Q3</td>
-                      <td>Yes/No</td>
-                      <td>     
-                        <img src="/Pictures/ExampleSavedQuestion.jpg" height="50%"/>
-                      </td>
-                      <td><input type="checkbox" name="#" value="#"><br>Select</td>        
+                  <td id="NoBorder">Q3</td>
+                  <td id="Border">Yes/No</td>
+                  <td id="Border">     
+                    <img src="/Pictures/ExampleSavedQuestion.jpg" class="img-responsive"/>
+                  </td>
+                          <td id="NoBorder"><a href="EditQuestion.html">Edit Question</a></td>         
                   </tr>
-                </table>
-        </div>
-      </div>
-    </div>
-  <!------------------- SECOND TOPIC ------------------------> 
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Topic 2</a>
-        </h4>
-      </div>
-      <div id="collapse2" class="panel-collapse collapse">
-        <div class="panel-body">
-               <table id="Files">    
-                  <tr>
-                    <td>Q1</td>
-                    <td>Multi choice</td>
-                    <td>
-                    <img src="/Pictures/ExampleSavedQuestion.jpg" height="50%"/>
-                    </td>
-                      <td><input type="checkbox" name="#" value="#"><br>Select</td>  
-                  </tr> 
-              </table>
-        </div>
-      </div>
-    </div>
- <!------------------- THIRD TOPIC ------------------------>   
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Topic 3</a>
-        </h4>
-      </div>
-      <div id="collapse3" class="panel-collapse collapse">
-        <div class="panel-body">
-        
-            <table id="Files">    
-              <tr>
-                <td>Q1</td>
-                <td>Multi choice</td>
-                <td>
-                <img src="/Pictures/ExampleSavedQuestion.jpg" height="50%"/>
-                </td>
-                      <td><input type="checkbox" name="#" value="#"><br>Select</td>   
-              </tr> 
 
-              <tr>    
-              <td>Q2</td>
-              <td>Calculation</td>
-              <td>     
-                <img src="/Pictures/ExampleSavedQuestion.jpg" height="50%"/>
-              </td>            
-                      <td><input type="checkbox" name="#" value="#"><br>Select</td>   
-              </tr>
-
-              <tr>    
-              <td>Q3</td>
-              <td>Yes/No</td>
-              <td>     
-                <img src="/Pictures/ExampleSavedQuestion.jpg" height="50%"/>
-              </td>
-                      <td><input type="checkbox" name="#" value="#"><br>Select</td>         
-              </tr>
-
-              <tr>    
-              <td>Q4</td>
-              <td>Calculation</td>
-              <td>     
-                <img src="/Pictures/ExampleSavedQuestion.jpg" height="50%"/>
-              </td>            
-                      <td><input type="checkbox" name="#" value="#"><br>Select</td>    
-              </tr>
-            </table>    
-        </div>
-      </div>
-    </div>
-<!------------------- END OF TOPICS ------------------------>   <!------------------- SUBMIT BUTTON ------------------------>   
-      <div class="panel-heading">
-          <div id=confirm>
-            <input type="submit" value="Confirm Selected Questions">
-          </div>      
-      </div>
-
-  </div> 
-</div>
-<!------------------- END OF PANNEL ------------------------>      
-</form>      
+                  <tr>    
+                  <td id="NoBorder">Q4</td>
+                  <td id="Border">Calculation</td>
+                  <td id="Border">     
+                    <img src="/Pictures/ExampleSavedQuestion.jpg" class="img-responsive"/>
+                  </td>            
+                          <td id="NoBorder"><a href="EditQuestion.html">Edit Question</a></td>    
+                  </tr>
+                </table>   
+            </div>   
+        </form> 
+    </div> 
     
+  <script src="/SelectQuestions.js"></script>  
+ 
 </body>
 </html>
