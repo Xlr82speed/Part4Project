@@ -5,83 +5,111 @@
   <meta charset="utf-8">
   <title>lecturer main menu</title>
     
+<!-- Latest compiled Material Design -->    
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>     
+    
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+
+     
     
   <link rel="stylesheet" href="LecturerNewQuestion.css">
 </head>
 
 <body>
    
-   <img id="bg" src="../Pictures/LoginBg.jpg" alt="bg"/>
-    
-   <img id="title" src="Pictures/CreatingNewQ.png" class="img-responsive"/>
-
-    <table id="Files">    
-      <tr>
-        <td>Question Name</td>
-        
-        <td id="name"> 
-            <input type="text" name="QuestionName" style="text-align:center; color:black;">
-        </td>  
-      </tr>
-<!---------------------------------------------------->
-      <tr>
-        <td>Question Type</td>
-          
-        <td id="select">
-        <select name="QuestionType" multiple>
-          <option value="Multichoice">Multichoice</option>
-          <option value="Calculation">Calculation</option>
-          <option value="Yes/No">Yes/No</option>
-        </select>
-        </td>  
-      </tr>
-<!---------------------------------------------------->       
-      <tr>
-        <td>Completion time</td>
-          
-        <td id="time">      
-        <input type="text" name="time" style="text-align:center; color:black;"><p> Minutes</p>             
-        </td>  
-          
-      </tr>
-<!----------------------------------------------------> 
-        <tr>
-          <td>Select topic</td>
-            
-         <td id="topic">
-            <select name="QuestionType" multiple>
-             <option value="Place holder 1">Place holder 1</option>
-             <option value="Place holder 2">Place holder 2</option>
-             <option value="Place holder 3">Place holder 3</option>
-            </select> 
-         </td>     
-        </tr>
-<!---------------------------------------------------->             <tr>
-        <td>Upload image</td>
-        
-        <td id="img">
-        <input type="file" name="QuestionImg" accept="image/*">
-        </td>
-      </tr>         
-    </table>
-    
-   <a href="#">    
-   <img id="SaveQ" src="Pictures/SaveQuestion.png" class="img-responsive">
-   </a>        
-    
-        <p id="LoggedInAs"> You are logged in as --------- </p>
-
-        <div id="dropdown">
-            <img id="mainmenu" src="../Pictures/MenuIcon.png" alt="MenuIcon"/>
-
-            <div class="dropdown-content">
-              <a href="LectureMM.html">Main Menu</a> 
-                <br>
-              <a href="Login.html">Logout</a>
-            </div>
+ <!-----------------------------NAVBAR ----------------------->
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title"> NEW QUESTION </span>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation. We hide it in small screens. -->
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <p id="LoggedInAs"> You are logged in as _________ </p>
+          </nav>
         </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="LectureMM.html">Main Menu</a>   
+          <a class="mdl-navigation__link" href="Login.html">Logout</a>
+        </nav>
+      </div>
+    </div>
+        
+    <div id="qNameTimeContainer">
+        <div id="qName">  
+            <p>Question name:</p>
+            <input id="NameTfield" type="text" name="QuestionName" style="text-align:center; color:black;">
+        </div>
+        <br>
+        <div id="qTime">   
+            <p>Completion time (min):</p>         
+            <input id="TimeTfield" type="text" name="time" style="text-align:center; color:black;">
+        </div>
+        <br>
+    </div>
+    
+    <div id="qTypeContainer">
+        <div id="qType">  
+            <p>Question type:</p>
+        </div>
+
+        <div id="qTypeSelect">   
+            <form>
+              <div class="mdl-selectfield mdl-js-selectfield">
+                <select class="mdl-selectfield__select" id="professsion1" name="professsion">
+                  <option value=""></option>
+                  <option value="option1">Text</option>
+                  <option value="option2">Multi choice</option>
+                  <option value="option3">Yes/No</option>
+                </select>
+              </div>
+           </form>
+        </div>
+        <br>
+    </div>
+    
+    <div id="qTopicContainer">
+        <div id="qTopic">  
+            <p>Under the topic:</p>
+        </div>
+
+        <div id="qTopicSelect">   
+            <form>
+              <div class="mdl-selectfield mdl-js-selectfield">
+                <select class="mdl-selectfield__select" id="professsion1" name="professsion">
+                  <option value=""></option>
+                  <option value="option1">Topic1</option>
+                  <option value="option2">Topic2</option>
+                  <option value="option3">Topic3987908798</option>
+                </select>
+              </div>
+           </form>
+        </div>
+        <br>
+    </div>
+    
+    <div id="AnswerContainer">
+        <div id="AnswerTitle">  
+            <p>Upload the answer or enter it via the text box below.</p>
+        </div>
+
+        <div id="AnswerSelect">   
+            <input type="file" name="QuestionImg" accept="image/*">
+        </div>
+        <br>
+        <div id="AnswerTextBox">
+            <textarea rows="4" cols="50"></textarea>
+        </div>
+    </div>
     
     <img id="UoaLogo" src="/Pictures/uoaLogo.jpg" alt="UoaLogo"/>
     

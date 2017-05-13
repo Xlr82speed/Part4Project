@@ -1,31 +1,6 @@
-#bg {
-    position: absolute;
-    top:0%;
-    left: 0%;
-    height: 100%;
-    width: 100%;
-}
-
-#mainmenu {
-    position:absolute;
-    top: 0.5%;
-    left: 0.5%;
-    height: 10%;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    top: 9%;
-    left: 0.5%;
-    min-width: 10%;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    text-align: center;
-}
-
-#dropdown:hover .dropdown-content {
-    display: block;
+.mdl-layout-title{
+    left: 44%;
+    font-size: 200%;
 }
 
 #LoggedInAs {
@@ -35,45 +10,143 @@
     font-size: 20px;
 }
 
-#title {
-    position: absolute;
-    top: 10%;
-    left: 31%;
-    height: 7%; 
+.mdl-layout__header{
+    box-shadow: 0px 8px 8px grey;  
 }
 
-table#Files {
+#qNameTimeContainer{
     position: absolute;
-    top: 20%;
-    left:30%;
-
+    top: 8%;
+    left: 38.5%;
+    width: 25%;
+    height: 10%;
+    box-shadow: 0px 8px 8px grey;
 }
 
-table#Files td {
-    border: 2px solid black;
-    background-color:blue;
-    padding: 5px;
-    color: white;
+#qName{
+    position: absolute;
+    top:10%;
+    left:2%;
     text-align: center;
 }
 
-
-table#Files select {
-    border: 2px solid lightblue;
-    color: red;
-    background-color: black;
+#qName p{
+    font-size: 120%;
+    font-weight: bold;
 }
 
+#NameTfield{
+    width:100%;
+    box-shadow: 0px 2px 2px grey;
+}
 
-#SaveQ{
+#qTime{
+    position: absolute;
+    top:10%;
+    right: 2%;
+    text-align: center;
+}
+
+#qTime p{
+    font-size: 120%;
+    font-weight: bold;
+}
+
+#TimeTfield{
+    width:100%;
+    box-shadow: 0px 2px 2px grey;
+}
+
+#qTypeContainer{
+    position: absolute;
+    top: 19%;
+    left: 45.5%;
+    width: 12%;
+    height: 4%;
+    box-shadow: 0px 8px 8px grey;
+}
+
+#qType{
+    position: absolute;
+    top:30%;
+    left: 2%;
+    font-size: 120%;
+    font-weight: bold;
+    text-align: center;
+}
+
+#qType p{
+    font-size: 100%;
+    font-weight: bold;
+
+}
+
+#qTypeSelect{
+    position: absolute;
+    top:30%;
+    right: 2%;
+}
+
+#qTopicContainer{
     position: absolute;
     top: 70%;
-    left:43%;
+    left: 45%;
+    width: 15%;
+    height: 4%;
+    box-shadow: 0px 8px 8px grey;
+}
+
+#qTopic{
+    position: absolute;
+    top:30%;
+    left: 2%;
+    font-size: 120%;
+    font-weight: bold;
+    text-align: center;
+}
+
+#qTopic p{
+    font-size: 100%;
+    font-weight: bold;
+
+}
+
+#qTopicSelect{
+    position: absolute;
+    top:30%;
+    right: 2%;
+}
+
+#AnswerContainer{
+    position: absolute;
+    top: 77%;
+    left: 20%;
+    width: 65%;
+    height: 20%;
+    box-shadow: 0px 8px 8px grey;
+}
+
+#AnswerTitle p{
+    text-align: center;
+    font-size: 130%;
+    font-weight: bold;
+}
+
+#AnswerSelect{
+    position: absolute;
+    top: 18%;
+    left: 41%;
+}
+
+#AnswerTextBox{
+    position: absolute;
+    top: 50%;
+    left: 2%;
 }
 
 #UoaLogo {
     position: absolute;
-    top: 91.5%;
-    left: 0.5%; 
+    bottom: 0.2%;
+    left: 0.2%; 
     height: 8%;
 }
