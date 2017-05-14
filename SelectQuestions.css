@@ -1,5 +1,5 @@
 .mdl-layout-title{
-    left: 41%;
+    left: 36.5%;
     font-size: 200%;
 }
 
@@ -81,10 +81,14 @@ div.panel {
 }
 
 .mdl-button {
-    left: 36%;
-    width: 15%;
+    left: 33%;
+    width: 20%;
     text-align: center;
     box-shadow: 0px 4px 5px grey;
+}
+table{
+    position: relative;
+    width: 100%;
 }
 
 #NoBorder{
