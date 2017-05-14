@@ -1,5 +1,6 @@
+
 .mdl-layout-title{
-    left: 44%;
+    left: 41%;
     font-size: 200%;
 }
 
@@ -16,59 +17,39 @@
 
 #qNameTimeContainer{
     position: absolute;
-    top: 8%;
-    left: 38.5%;
-    width: 25%;
-    height: 10%;
-    box-shadow: 0px 8px 8px grey;
-}
-
-#qName{
-    position: absolute;
-    top:10%;
-    left:2%;
-    text-align: center;
+    top: 11%;
+    left: 43%;
+    width: 17%;
+    height: 8%;
 }
 
 #qName p{
+    position: relative;
+    text-align: center;
     font-size: 120%;
     font-weight: bold;
 }
 
 #NameTfield{
-    width:100%;
-    box-shadow: 0px 2px 2px grey;
-}
-
-#qTime{
     position: absolute;
-    top:10%;
-    right: 2%;
-    text-align: center;
-}
-
-#qTime p{
-    font-size: 120%;
-    font-weight: bold;
-}
-
-#TimeTfield{
-    width:100%;
+    top:40%;
+    left: 1%;
+    width:98%;
     box-shadow: 0px 2px 2px grey;
 }
 
 #qTypeContainer{
     position: absolute;
     top: 19%;
-    left: 45.5%;
-    width: 12%;
+    left: 43%;
+    width: 17%;
     height: 4%;
-    box-shadow: 0px 8px 8px grey;
+    box-shadow: 0px 1px 1px grey;
 }
 
 #qType{
     position: absolute;
-    top:30%;
+    top:20%;
     left: 2%;
     font-size: 120%;
     font-weight: bold;
@@ -83,17 +64,17 @@
 
 #qTypeSelect{
     position: absolute;
-    top:30%;
+    top:20%;
     right: 2%;
 }
 
 #qTopicContainer{
     position: absolute;
-    top: 70%;
-    left: 45%;
-    width: 15%;
-    height: 4%;
-    box-shadow: 0px 8px 8px grey;
+    top: 71%;
+    left: 40.5%;
+    width: 21%;
+    height: 5%;
+    box-shadow: 0px 2px 2px grey;
 }
 
 #qTopic{
@@ -142,7 +123,7 @@
 #AnswerTextBox{
     position: absolute;
     top: 35%;
-    left: 1%;
+    left: 0.5%;
 }
 
 #UoaLogo {
