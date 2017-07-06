@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Student Active session login</title>
+    
+<!-- Latest compiled Material Design -->    
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>     
+    
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+  <link rel="stylesheet" href="SActiveQLogin.css">
+</head>
+
+<body>
+   
+ <!-----------------------------NAVBAR ----------------------->
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout ">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title"> Active session login </span>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation. We hide it in small screens. -->
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <p id="LoggedInAs"> You are logged in as _________ </p>
+          </nav>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="LectureMM.html">Main Menu</a>   
+          <a class="mdl-navigation__link" href="Login.html">Logout</a>
+        </nav>
+      </div>
+    </div>
+        
+    <div id="QuizFound">     
+            <h1>Active Quiz found!</h1>
+                
+            <p>Please enter below the login tag provided by your lecturer.</p>
+    </div>
+    
+
+    
+    <form action="SActiveQuiz.html">
+    <div id="Login"> 
+            <input id="NameTfield" type="text" name="QuestionName" style="text-align:center; color:black;">
+    </div>
+
+    <!-- Colored raised button -->
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" type="submit">
+      Login to quiz
+    </button>
+     
+</form>
+    
+    <img id="UoaLogo" src="/Pictures/uoaLogo.jpg" alt="UoaLogo"/>
+    
+</body>
+</html>
