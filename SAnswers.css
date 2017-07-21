@@ -16,7 +16,7 @@
 
 
 
-.Questions{
+.PastQuizzes{
     position: absolute;
     top: 30%;
     left: 15%;
@@ -81,9 +81,4 @@ div.panel {
     width: 25%;
     text-align: center;
     border:  1px solid black;
-}
-
-#trueContainer{
-    position:relative;
-    left: 100%;
 }
