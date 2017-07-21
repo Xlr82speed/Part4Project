@@ -1,6 +1,6 @@
 
 .mdl-layout-title{
-    left: 43%;
+    left: 41%;
     font-size: 200%;
 }
 
@@ -27,14 +27,14 @@
 #loginTag p{
     position: relative;
     text-align: center;
-    top: 40%;
+    top: 30%;
     font-size: 400%;
 
 }
 
 #clock{
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 42%;
     width: 50%;
 }
@@ -45,18 +45,25 @@
 
 #startButton{
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 40%;
     box-shadow: 0px 6px 8px grey;
 }
 
 #stopButton{
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 58%;
     box-shadow: 0px 6px 8px grey;
 }
 
+#activateSession{
+    position: absolute;
+    top: 32%;
+    left: 46%;
+    background-color: red;
+    box-shadow: 0px 6px 8px grey;
+}
 
 #UoaLogo {
     position: absolute;
