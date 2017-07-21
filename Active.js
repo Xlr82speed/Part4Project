@@ -10,20 +10,28 @@ dg[6]=new Image();dg[6].src="/Clock/dg6.gif";
 dg[7]=new Image();dg[7].src="/Clock/dg7.gif";
 dg[8]=new Image();dg[8].src="/Clock/dg8.gif";
 dg[9]=new Image();dg[9].src="/Clock/dg9.gif";
-dgam=new Image();dgam.src="/Clock/dgam.gif";
-dgpm=new Image();dgpm.src="/Clock/dgpm.gif";
+
+var hr = 00;
+var mn = 01;
+var se = 03;
 
 function dotime(){ 
-	var d=new Date();
-	var hr=d.getHours(),mn=d.getMinutes(),se=d.getSeconds();
-
-	// set AM or PM
-	document.ampm.src=((hr<12)?dgam.src:dgpm.src);
-
-	// adjust from 24hr clock
-	if(hr==0){hr=12;}
-	else if(hr>12){hr-=12;}
-
+	//var d=new Date();
+	//var hr=d.getHours(),mn=d.getMinutes(),se=d.getSeconds();
+    
+    if (se != 00){
+    se = se - 1;
+    }else if (mn !=00 && se==00){
+     mn = mn - 1;
+     se = 59;    
+    }else if (hr !=0 && mn ==00 && se==00){
+     hr = hr - 1;    
+     mn = 59;
+     se = 59;    
+    }else if (hr ==00 && mn ==00 && se ==00){
+     clearInterval(t);
+    }
+    
 	document.hr1.src = getSrc(hr,10);
 	document.hr2.src = getSrc(hr,1);
 	document.mn1.src = getSrc(mn,10);
@@ -36,7 +44,14 @@ function getSrc(digit,index){
 	return dg[(Math.floor(digit/index)%10)].src;
 }
 
+function start(){
+	t = setInterval(dotime,1000);
+}
+
+function stop(){
+    clearInterval(t);
+}
+
 window.onload=function(){
 	dotime();
-	setInterval(dotime,1000);
 }
