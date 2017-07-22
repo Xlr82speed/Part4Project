@@ -41,8 +41,8 @@
 #qTypeContainer{
     position: absolute;
     top: 19%;
-    left: 43%;
-    width: 17%;
+    left: 41%;
+    width: 20%;
     height: 4%;
     box-shadow: 0px 1px 1px grey;
 }
@@ -66,6 +66,40 @@
     position: absolute;
     top:20%;
     right: 2%;
+}
+
+#dynamicBlank{
+    position: absolute;
+    top:25%;
+    left: 30%;
+}
+
+#dynamicContentsText{
+    position: absolute;
+    top:30%;
+    left: 20%;
+    display:none;
+}
+
+#dynamicContentsMultiChoice{
+    position: absolute;
+    top:30%;
+    left: 20%;
+    display:none;
+}
+
+#dynamicContentsTrueFalse{
+    position: absolute;
+    top:30%;
+    left: 20%;
+    display:none;
+}
+
+#dynamicUpload{
+    position: absolute;
+    top:30%;
+    left: 20%;
+    display:none;
 }
 
 #qTopicContainer{
@@ -98,6 +132,19 @@
     right: 2%;
 }
 
+#DynamicAnswer{
+    position: absolute;
+    top: 77%;
+    left: 20%;
+    border: 1px solid black;
+    width: 60%;
+    background-color:lightgreen;
+}
+
+button:focus{
+    background:yellow;
+}
+
 #AnswerContainer{
     position: absolute;
     top: 77%;
@@ -106,12 +153,7 @@
     height: 21%;
     background-color: lightgreen;
     box-shadow: 0px 8px 8px grey;
-}
-
-#AnswerTitle p{
-    text-align: center;
-    font-size: 130%;
-    font-weight: bold;
+    display:none;
 }
 
 #AnswerSelect{
@@ -124,6 +166,13 @@
     position: absolute;
     top: 35%;
     left: 0.5%;
+}
+
+#AnswerMultichoice{
+    position: absolute;
+    top:30%;
+    left: 20%;
+    display:none;
 }
 
 #submitButton{
