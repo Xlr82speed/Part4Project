@@ -128,14 +128,20 @@
     display:none;
 }
 
+#uploadQuestionText{
+    position: absolute;
+    left: 17%;
+}
+
 #UploadQuestion{
     height: 0;
     width: 0;
 }
 
 #UploadQuestionLabel {
-    position: relative;
-    left: 41%;
+    position: absolute;
+    top: 0%;
+    left: 65%;
     border: 1px solid #cccccc;
     padding: 0.25% 3%;
     font-family:arial;

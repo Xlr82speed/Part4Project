@@ -35,11 +35,6 @@
             
            document.getElementById("DynamicAnswer").innerHTML = document.getElementById("AnswerTrueFalse").innerHTML;    
         }
-        else if (x == "option4"){
-           document.getElementById("dynamicBlank").innerHTML = document.getElementById("dynamicUpload").innerHTML; 
-            
-           document.getElementById("DynamicAnswer").innerHTML = document.getElementById("AnswerContainer").innerHTML;    
-        }
     }
   </script>
 </head>
@@ -88,8 +83,7 @@
                 <select class="mdl-selectfield__select" id="QuestionTypes" name="professsion" onchange="myFunction()">
                   <option value="option1">Text</option>
                   <option value="option2">Multi choice</option>
-                  <option value="option3">True/False</option>
-                  <option value="option4">Upload question</option>    
+                  <option value="option3">True/False</option>   
                 </select>
               </div>
            </form>
@@ -98,17 +92,32 @@
     </div>
     
     <div id="dynamicBlank">
-         <p style="text-align: center">Type the question contents here</p>
+        <p id="uploadQuestionText">Upload an image for the question (optional)</p>
+                <input id="UploadQuestion" type="file" name="QuestionImg" accept="image/*">
+                <label id="UploadQuestionLabel" for="UploadQuestion">Choose file</label>
+        <br>
+        <br>
+        <p style="text-align: center; font-size: 120%;"><b>Type the question contents below</b></p>
         <textarea rows="12" cols="80"></textarea> 
     </div>
     
     <div id="dynamicContentsText">
-        <p style="text-align: center">Type the question contents here</p>
-        <textarea rows="12" cols="80"></textarea>
+        <p id="uploadQuestionText">Upload an image for the question (optional)</p>
+                <input id="UploadQuestion" type="file" name="QuestionImg" accept="image/*">
+                <label id="UploadQuestionLabel" for="UploadQuestion">Choose file</label>
+        <br>
+        <br>
+        <p style="text-align: center; font-size: 120%;"><b>Type the question contents below</b></p>
+        <textarea rows="12" cols="80"></textarea> 
     </div>
     
         <div id="dynamicContentsMultiChoice">
-         <p style="text-align: center">Type the question contents here</p>    
+        <p id="uploadQuestionText">Upload an image for the question (optional)</p>
+                <input id="UploadQuestion" type="file" name="QuestionImg" accept="image/*">
+                <label id="UploadQuestionLabel" for="UploadQuestion">Choose file</label>
+        <br>
+        <br>
+        <p style="text-align: center; font-size: 120%;"><b>Type the question contents below</b></p>
          <textarea rows="4" cols="80"></textarea><br>
          <div style="text-align: center;">    
          A <textarea rows="1" cols="12" ></textarea>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -121,17 +130,13 @@
     </div>
     
     <div id="dynamicContentsTrueFalse">
-        <p style="text-align: center">Type the question contents here</p>
-        <textarea rows="12" cols="80"></textarea><br> 
-    </div>
-    
-    <div id="dynamicUpload">
-        <br>
-        <br>
-        <br>
-                <p style="text-align: center"><b>Upload the question via an image/PDF.</b></p>
+        <p id="uploadQuestionText">Upload an image for the question (optional)</p>
                 <input id="UploadQuestion" type="file" name="QuestionImg" accept="image/*">
-                <label id="UploadQuestionLabel" for="UploadQuestion">Choose file</label>    
+                <label id="UploadQuestionLabel" for="UploadQuestion">Choose file</label>
+        <br>
+        <br>
+        <p style="text-align: center; font-size: 120%;"><b>Type the question contents below</b></p>
+        <textarea rows="12" cols="80"></textarea><br> 
     </div>
     
     <div id="qTopicContainer">
@@ -155,7 +160,7 @@
     </div>
         
     <div id=DynamicAnswer>
-            <p style="text-align: center"><b>Upload the answer via an image/PDF.</b></p>
+            <p style="text-align: center; font-size: 120%;"><b>Upload the answer via an image/PDF.</b></p>
             <input id="UploadAnswer" type="file" name="QuestionImg" accept="image/*">
             <label id="UploadAnswerLabel" for="UploadAnswer">Choose file</label> 
         <br>
