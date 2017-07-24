@@ -87,3 +87,7 @@ div.panel {
     position:relative;
     left: 100%;
 }
+
+button:focus{
+    background:yellow;
+}
