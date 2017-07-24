@@ -86,7 +86,6 @@
             <form>
               <div class="mdl-selectfield mdl-js-selectfield">
                 <select class="mdl-selectfield__select" id="QuestionTypes" name="professsion" onchange="myFunction()">
-                  <option value=""></option>
                   <option value="option1">Text</option>
                   <option value="option2">Multi choice</option>
                   <option value="option3">True/False</option>
@@ -99,7 +98,8 @@
     </div>
     
     <div id="dynamicBlank">
-        <p style="align-self: center;"> Select the question type.</p>    
+         <p style="text-align: center">Type the question contents here</p>
+        <textarea rows="12" cols="80"></textarea> 
     </div>
     
     <div id="dynamicContentsText">
@@ -126,8 +126,12 @@
     </div>
     
     <div id="dynamicUpload">
-        <p>Upload the question via an image/PDF.</p>
-        <input style="align: center" type="file" name="QuestionImg" accept="image/*">  
+        <br>
+        <br>
+        <br>
+                <p style="text-align: center"><b>Upload the question via an image/PDF.</b></p>
+                <input id="UploadQuestion" type="file" name="QuestionImg" accept="image/*">
+                <label id="UploadQuestionLabel" for="UploadQuestion">Choose file</label>    
     </div>
     
     <div id="qTopicContainer">
@@ -149,15 +153,21 @@
         </div>
         <br>
     </div>
-    
+        
     <div id=DynamicAnswer>
+            <p style="text-align: center"><b>Upload the answer via an image/PDF.</b></p>
+            <input id="UploadAnswer" type="file" name="QuestionImg" accept="image/*">
+            <label id="UploadAnswerLabel" for="UploadAnswer">Choose file</label> 
+        <br>
+            <textarea rows="4" cols="110"></textarea>
     </div>
     
     <div id="AnswerContainer"> 
-            <p style="text-align: center; font-size: 130%; font-weight: bold;">Upload the answer or enter it via the text box below.</p>
-            <input type="file" name="QuestionImg" accept="image/*">
+            <p style="text-align: center"><b>Upload the answer via an image/PDF.</b></p>
+            <input id="UploadAnswer" type="file" name="QuestionImg" accept="image/*">
+            <label id="UploadAnswerLabel" for="UploadAnswer">Choose file</label> 
         <br>
-            <textarea rows="4" cols="112"></textarea>
+            <textarea rows="4" cols="110"></textarea>
     </div>
     
     <div id="AnswerMultichoice">
