@@ -76,6 +76,23 @@
     left: 50%;
 }
 
+#dynamicanswers{
+    position: absolute;
+    top: 70%;
+    left:33%;
+}
+
+#testTable{
+    width: 180%;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#testTable td{
+    border-style: solid;
+    border-width: 1px;
+}
+
 #UoaLogo {
     position: absolute;
     bottom: 0.2%;
